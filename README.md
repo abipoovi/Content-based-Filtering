@@ -1,2 +1,5 @@
-# Content-based-Filtering
-Built a content-based food recommendation system using cosine similarity and One-Hot Encoding. Predicted user preferences for new items based on similarity-weighted ratings, enabling personalized food suggestions.
+Project: Content-Based Food Recommendation System 
+I developed a content-based recommendation system to suggest food items based on user preferences and item similarity. 
+The system uses food attributes such as cuisine type, diet category, and calorie count to compute the similarity between items. Categorical features like Cuisine and Diet were encoded using One-Hot Encoding, and numerical features like Calories were normalized for fair comparison. I constructed a feature matrix and applied cosine similarity to measure how similar different food items are.
+To handle a new item (VegPizza), the system compares it with existing foods and identifies the top similar items. Based on a user's past ratings for these similar items, I calculated a weighted average prediction.
+The system then decides whether to recommend the new item based on the predicted rating threshold. This project shows the practical use of: - Content-based filtering - Feature engineering - Similarity computation (cosine similarity) - Handling missing values (NaN) - Personalized recommendation logic
